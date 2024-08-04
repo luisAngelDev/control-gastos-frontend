@@ -11,6 +11,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Not403Component } from './not403/not403.component';
 import { Not404Component } from './not404/not404.component';
 import { IngresoComponent } from './ingreso/ingreso.component';
+import { EgresoComponent } from './egreso/egreso.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { MetodopagoComponent } from './metodopago/metodopago.component';
+import { ReporteComponent } from './reporte/reporte.component';
 
 @NgModule({
     imports: [
@@ -29,6 +33,10 @@ import { IngresoComponent } from './ingreso/ingreso.component';
         Not403Component,
         Not404Component,
         IngresoComponent,
+        EgresoComponent,
+        CategoriaComponent,
+        MetodopagoComponent,
+        ReporteComponent,
     ],
     providers: [],
 })
