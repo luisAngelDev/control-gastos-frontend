@@ -15,6 +15,7 @@ import { EgresoComponent } from './egreso/egreso.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { MetodopagoComponent } from './metodopago/metodopago.component';
 import { ReporteComponent } from './reporte/reporte.component';
+import { CategoriaEdicionComponent } from './categoria/categoria-edicion/categoria-edicion.component';
 
 @NgModule({
     imports: [
@@ -37,6 +38,7 @@ import { ReporteComponent } from './reporte/reporte.component';
         CategoriaComponent,
         MetodopagoComponent,
         ReporteComponent,
+        CategoriaEdicionComponent,
     ],
     providers: [],
 })

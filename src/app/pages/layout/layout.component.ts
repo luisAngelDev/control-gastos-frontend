@@ -19,19 +19,14 @@ export class LayoutComponent implements OnInit{
   ){}
 
   ngOnInit(): void {
-    console.log('estoy dentro del on imit ')
-    console.log('sigo dentro del On init')
+
     this.menuService.getMenuCambio().subscribe(data => {
   
-      console.log('devuelvo menus ')
       this.menus = data;
-      console.log(data)
     });
-    console.log('sali del On Init ')
   }
 
   cerrarSesion(){
-    console.log('entre al cerrar sesion del typescrip')
     this.loginService.cerrarSesion();
   }
 }

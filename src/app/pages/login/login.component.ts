@@ -30,7 +30,6 @@ export class LoginComponent {
     
     this.loginService.login(this.usuario, this.clave).subscribe(data => {
       
-      console.log('devuelda data ?')
       sessionStorage.setItem(environment.TOKEN_NAME, data.access_token);
       
       this.router.navigate(['/pages/inicio'])
