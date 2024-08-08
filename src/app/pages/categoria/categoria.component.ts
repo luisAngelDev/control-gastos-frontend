@@ -14,7 +14,7 @@ import { CategoriaService } from 'src/app/_service/categoria.service';
 export class CategoriaComponent implements OnInit{
 
   dataSource: MatTableDataSource<Categoria>;
-  displayedColumns: string[]= ['idCategoria', 'nombre', 'descripcion']
+  displayedColumns: string[]= ['idCategoria', 'nombre', 'descripcion', 'acciones']
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;

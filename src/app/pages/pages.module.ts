@@ -16,6 +16,7 @@ import { CategoriaComponent } from './categoria/categoria.component';
 import { MetodopagoComponent } from './metodopago/metodopago.component';
 import { ReporteComponent } from './reporte/reporte.component';
 import { CategoriaEdicionComponent } from './categoria/categoria-edicion/categoria-edicion.component';
+import { MetodopagoEdicionComponent } from './metodopago/metodopago-edicion/metodopago-edicion.component';
 
 @NgModule({
     imports: [
@@ -39,6 +40,7 @@ import { CategoriaEdicionComponent } from './categoria/categoria-edicion/categor
         MetodopagoComponent,
         ReporteComponent,
         CategoriaEdicionComponent,
+        MetodopagoEdicionComponent,
     ],
     providers: [],
 })

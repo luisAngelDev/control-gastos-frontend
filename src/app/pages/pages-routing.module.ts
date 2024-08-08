@@ -1,5 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 import { InicioComponent } from './inicio/inicio.component';
 import { GuardService } from '../_service/guard.service';
@@ -10,6 +10,7 @@ import { CategoriaComponent } from './categoria/categoria.component';
 import { MetodopagoComponent } from './metodopago/metodopago.component';
 import { ReporteComponent } from './reporte/reporte.component';
 import { CategoriaEdicionComponent } from './categoria/categoria-edicion/categoria-edicion.component';
+import { MetodopagoEdicionComponent } from './metodopago/metodopago-edicion/metodopago-edicion.component';
 
 export const routes: Routes = [
 
@@ -23,7 +24,13 @@ export const routes: Routes = [
           {path: 'edicion/:id', component: CategoriaEdicionComponent }
         ], canActivate: [GuardService]
     },
-    { path: 'metodopago', component: MetodopagoComponent, canActivate: [GuardService] },
+    { 
+        path: 'metodopago', component: MetodopagoComponent, children: [
+            {path: 'nuevo', component: MetodopagoEdicionComponent },
+            {path: 'edicion/id', component: MetodopagoEdicionComponent}
+        ],canActivate: [GuardService]
+    },
+
     { path: 'reporte', component: ReporteComponent, canActivate: [GuardService] },
     { path: 'not-403', component: Not403Component },
 ]
