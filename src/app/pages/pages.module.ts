@@ -17,6 +17,7 @@ import { MetodopagoComponent } from './metodopago/metodopago.component';
 import { ReporteComponent } from './reporte/reporte.component';
 import { CategoriaEdicionComponent } from './categoria/categoria-edicion/categoria-edicion.component';
 import { MetodopagoEdicionComponent } from './metodopago/metodopago-edicion/metodopago-edicion.component';
+import { EgresoDialogoComponent } from './egreso/egreso-dialogo/egreso-dialogo.component';
 
 @NgModule({
     imports: [
@@ -41,6 +42,7 @@ import { MetodopagoEdicionComponent } from './metodopago/metodopago-edicion/meto
         ReporteComponent,
         CategoriaEdicionComponent,
         MetodopagoEdicionComponent,
+        EgresoDialogoComponent,
     ],
     providers: [],
 })

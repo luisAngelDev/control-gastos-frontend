@@ -19,6 +19,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { JwtModule } from '@auth0/angular-jwt';
 import { environment } from 'src/environments/environment';
 
+
 //instalar npm i @auth0/angular-jwt --save
 export function tokenGetter() {
   return sessionStorage.getItem(environment.TOKEN_NAME);

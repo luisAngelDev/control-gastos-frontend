@@ -1,4 +1,7 @@
 import { NgModule } from '@angular/core';
+
+import {Component} from '@angular/core';
+
 import { CommonModule } from '@angular/common';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule } from '@angular/material/button';
@@ -26,7 +29,10 @@ import {MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatCardModule } from '@angular/material/card';
 import {MatGridListModule } from '@angular/material/grid-list';
 import {MatTabsModule } from '@angular/material/tabs';
+import { CustomDateAdapter } from './custom-adapter';
 //import { CustomDateAdapter } from './custom-adapter';
+
+
 
 
 @NgModule({
@@ -59,11 +65,11 @@ import {MatTabsModule } from '@angular/material/tabs';
     MatSlideToggleModule,
     MatCardModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
   ],
   providers: [
     { provide: MAT_DATE_LOCALE, useValue: 'es-ES' },
-    //{ provide: DateAdapter, useClass: CustomDateAdapter }
+    { provide: DateAdapter, useClass: CustomDateAdapter }
   ]
 })
 export class MaterialModule { }
