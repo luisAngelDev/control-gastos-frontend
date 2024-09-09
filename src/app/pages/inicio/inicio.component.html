@@ -1,1 +1,76 @@
 <h2>Bienvenido usuario: {{usuario}}</h2>
+
+<mat-card class="reporte-principal">
+    <app-reporte> </app-reporte>
+</mat-card>
+
+<mat-divider style="margin-top: 20px;"></mat-divider>
+
+<br>
+<!-- fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px"  -->
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <mat-card fxFlex="25">
+        <div>widget</div>
+    </mat-card >
+
+    <mat-card fxFlex="25">
+        <div>widget</div>
+    </mat-card>
+
+    <mat-card fxFlex="25">
+        <div>widget</div>
+    </mat-card>
+
+    <mat-card fxFlex="25">
+        <div>widget</div>
+    </mat-card>
+
+</div>
+
+<mat-divider ></mat-divider>
+
+<br>
+
+<div>
+    <div>
+        <div>
+            <!-- <table mat-table [dataSource]="">
+
+                 <ng-container matColumnDef="posicion">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Id </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.idEgreso}} </mat-cell>
+                  </ng-container>
+              
+              
+                  <ng-container matColumnDef="nombre">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Descripcion </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.descripcion}} </mat-cell>
+                  </ng-container>
+              
+              
+                  <ng-container matColumnDef="ancho">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Monto </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.monto}} </mat-cell>
+                  </ng-container>
+              
+                  <ng-container matColumnDef="fecha">
+                    <mat-header-cell *matHeaderCellDef mat-sort-header> Fecha </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.fecha}} </mat-cell>
+                  </ng-container>
+
+                  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+            </table>
+            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>-->
+        </div>
+
+    </div>
+    <div>
+        <div>widget data</div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>

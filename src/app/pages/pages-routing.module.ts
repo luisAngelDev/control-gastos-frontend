@@ -11,6 +11,7 @@ import { MetodopagoComponent } from './metodopago/metodopago.component';
 import { ReporteComponent } from './reporte/reporte.component';
 import { CategoriaEdicionComponent } from './categoria/categoria-edicion/categoria-edicion.component';
 import { MetodopagoEdicionComponent } from './metodopago/metodopago-edicion/metodopago-edicion.component';
+import { Reporte2Component } from './reporte2/reporte2.component';
 
 export const routes: Routes = [
 
@@ -27,11 +28,12 @@ export const routes: Routes = [
     { 
         path: 'metodopago', component: MetodopagoComponent, children: [
             {path: 'nuevo', component: MetodopagoEdicionComponent },
-            {path: 'edicion/id', component: MetodopagoEdicionComponent}
+            {path: 'edicion/:id', component: MetodopagoEdicionComponent}
         ],canActivate: [GuardService]
     },
 
     { path: 'reporte', component: ReporteComponent, canActivate: [GuardService] },
+    { path: 'reporte2', component: Reporte2Component, canActivate: [GuardService] },
     { path: 'not-403', component: Not403Component },
 ]
 

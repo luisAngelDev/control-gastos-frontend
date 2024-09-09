@@ -18,6 +18,10 @@ import { ReporteComponent } from './reporte/reporte.component';
 import { CategoriaEdicionComponent } from './categoria/categoria-edicion/categoria-edicion.component';
 import { MetodopagoEdicionComponent } from './metodopago/metodopago-edicion/metodopago-edicion.component';
 import { EgresoDialogoComponent } from './egreso/egreso-dialogo/egreso-dialogo.component';
+import { HighchartsChartModule } from 'highcharts-angular';// charts 3/2
+import { FlexLayoutModule } from '@angular/flex-layout'; //npm i @angular/flex-layout
+import { MatCardModule } from '@angular/material/card';
+import { Reporte2Component } from './reporte2/reporte2.component';
 
 @NgModule({
     imports: [
@@ -26,8 +30,11 @@ import { EgresoDialogoComponent } from './egreso/egreso-dialogo/egreso-dialogo.c
         HttpClientModule,
         ReactiveFormsModule,
         FormsModule,//falta flex
+        FlexLayoutModule,
+        MatCardModule,
         //PdfViewerModule,
         PagesRoutingModule, //cuando se llame a page.module. este carga a PagesRoutingModule
+        HighchartsChartModule, //npm install highcharts-angular --save  //3/1
     ],
     exports: [],
     declarations: [
@@ -43,6 +50,8 @@ import { EgresoDialogoComponent } from './egreso/egreso-dialogo/egreso-dialogo.c
         CategoriaEdicionComponent,
         MetodopagoEdicionComponent,
         EgresoDialogoComponent,
+        Reporte2Component,
+
     ],
     providers: [],
 })

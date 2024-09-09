@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { JwtHelperService } from '@auth0/angular-jwt';
+import { Egreso } from 'src/app/_model/egreso';
 import { MenuService } from 'src/app/_service/menu.service';
 import { environment } from 'src/environments/environment';
 
@@ -11,6 +13,9 @@ import { environment } from 'src/environments/environment';
 export class InicioComponent {
 
   usuario: string;
+
+  //displayedColumns = ['´posicion', 'nombre','ancho', 'fecha'];
+  //dataSource: MatTableDataSource<Egreso>;
 
   constructor(
     private menuService: MenuService

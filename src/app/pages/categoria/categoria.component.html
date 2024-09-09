@@ -8,22 +8,22 @@
 
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
 
-    <ng-container matColumnDef="idCategoria">
+    <ng-container class="mat-column-id" matColumnDef="idCategoria">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
         <td mat-cell *matCellDef="let element"> {{element.idCategoria}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="nombre">
+    <ng-container class="mat-column-nombre" matColumnDef="nombre">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Nombre </th>
         <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="descripcion">
+    <ng-container class="mat-column-descripcion" matColumnDef="descripcion">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Descripcion </th>
         <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="acciones">
+    <ng-container class="mat-column-acciones" matColumnDef="acciones">
         <th mat-header-cell *matHeaderCellDef> Acciones </th>
         <td mat-cell *matCellDef="let element">
             <button mat-button color="primary"  [routerLink]="['edicion', element.idCategoria]"> <!-- (click)="cambiarEstado()" -->
