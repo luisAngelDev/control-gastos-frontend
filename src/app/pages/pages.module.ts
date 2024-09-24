@@ -22,6 +22,7 @@ import { HighchartsChartModule } from 'highcharts-angular';// charts 3/2
 import { FlexLayoutModule } from '@angular/flex-layout'; //npm i @angular/flex-layout
 import { MatCardModule } from '@angular/material/card';
 import { Reporte2Component } from './reporte2/reporte2.component';
+import { IngresoDialogoComponent } from './ingreso/ingreso-dialogo/ingreso-dialogo.component';
 
 @NgModule({
     imports: [
@@ -51,6 +52,7 @@ import { Reporte2Component } from './reporte2/reporte2.component';
         MetodopagoEdicionComponent,
         EgresoDialogoComponent,
         Reporte2Component,
+        IngresoDialogoComponent,
 
     ],
     providers: [],

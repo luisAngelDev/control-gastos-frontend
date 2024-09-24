@@ -26,6 +26,12 @@ export class ConsultaEgresoService {
   listarResumenxMes(mes: string, anio: string){
     return this.http.get<any[]>(`${this.url}/listarResumenxMes?mes=${mes}&anio=${anio}`);
   }
+
+  // listar totales por mes de un año determido
+  listartotalesMes(anio: string){
+    return this.http.get<any[]>(`${this.url}/listartotalesMes?anio=${anio}`);
+  }
+
   //probar despues por que llega data vacia
   listarResumenxMes1(filtroEgresoXMes: FiltroConsultaEgresoXMesDTO){
     return this.http.post<any[]>(`${this.url}/listarResumenxMes`, filtroEgresoXMes);

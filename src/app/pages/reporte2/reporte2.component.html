@@ -1,0 +1,18 @@
+<form [formGroup]="form" #frmCliente="ngForm" (ngSubmit)="buscar()">
+
+<!--     <mat-form-field>
+        <input matInput placeholder="MES" formControlName="mesConsulta" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="AÑO" formControlName="anioConsulta" required>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="frmCliente.invalid">Buscar</button>
+ -->
+</form>
+
+<div [hidden]="!chart">
+    <canvas id="canvas">{{chart}}</canvas>
+</div> 
+

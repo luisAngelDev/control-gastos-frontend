@@ -35,7 +35,7 @@ export class ReporteComponent implements OnInit {
     let aniofinal = this.anio.toString();
     let mesActualFinal = this.mesActual.toString();
 
-    let filtro = new FiltroConsultaEgresoXMesDTO(aniofinal, mesActualFinal);
+    //let filtro = new FiltroConsultaEgresoXMesDTO(aniofinal, mesActualFinal);
 
     this.consultaEgresoService.listarResumenxMes(mesActualFinal, aniofinal).subscribe((data) => {
         //this.consultaEgresoService.listarResumenxMes1(filtro).subscribe(data => {
@@ -53,12 +53,37 @@ export class ReporteComponent implements OnInit {
                 borderColor: '#3cba9f',
                 fill: false,
                 backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
-                  'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)',
-                  'rgba(153, 102, 0, 0.2)',
-                  'rgba(255, 159, 64, 0.2)',
+                  'rgba(255, 99, 132, 0.4)',
+                  'rgba(54, 162, 235, 0.4)',
+                  'rgba(255, 206, 86, 0.4)',
+                  'rgba(75, 192, 192, 0.4)',
+                  'rgba(153, 102, 0, 0.4)',
+                  'rgba(255, 159, 64, 0.4)',
+                  'rgba(255, 99, 132, 0.4)',
+                  'rgba(54, 162, 235, 0.4)',
+                  'rgba(255, 206, 86, 0.4)',
+                  'rgba(75, 192, 192, 0.4)',
+                  'rgba(153, 102, 0, 0.4)',
+                  'rgba(255, 159, 64, 0.4)',
+                  'rgba(255, 206, 86, 0.4)',
+                  'rgba(75, 192, 192, 0.4)',
+                  'rgba(153, 102, 0, 0.4)',
+                  'rgba(255, 159, 64, 0.4)',
+                  'rgba(255, 99, 132, 0.4)',
+                  'rgba(54, 162, 235, 0.4)',
+                  'rgba(255, 206, 86, 0.4)',
+                  'rgba(75, 192, 192, 0.4)',
+                  'rgba(255, 99, 132, 0.4)',
+                  'rgba(54, 162, 235, 0.4)',
+                  'rgba(255, 206, 86, 0.4)',
+                  'rgba(75, 192, 192, 0.4)',
+                  'rgba(255, 99, 132, 0.4)',
+                  'rgba(54, 162, 235, 0.4)',
+                  'rgba(255, 206, 86, 0.4)',
+                  'rgba(75, 192, 192, 0.4)',
+                  'rgba(255, 99, 132, 0.4)',
+                  'rgba(54, 162, 235, 0.4)',
+                  'rgba(255, 206, 86, 0.4)',
                 ],
               },
             ],
@@ -66,7 +91,8 @@ export class ReporteComponent implements OnInit {
           options: {
             title: {
                 display: true,
-                text: 'GRAFICO DE BARRAS DE GASTOS DIARIOS DURANTE EL MES'
+                text: 'GRAFICO DE BARRAS DE GASTOS DIARIOS DURANTE EL MES',
+                fontSize: 18,
               },
             legend: {
               display: true,

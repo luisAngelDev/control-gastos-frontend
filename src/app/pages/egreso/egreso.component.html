@@ -27,7 +27,7 @@
   
       <ng-container matColumnDef="fecha">
         <mat-header-cell *matHeaderCellDef mat-sort-header> Fecha </mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.fecha}} </mat-cell>
+        <mat-cell *matCellDef="let element"> {{element.fecha | date:'dd-MM-yyyy'}} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="categoria">
